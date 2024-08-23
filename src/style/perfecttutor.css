@@ -1,0 +1,209 @@
+.main-perfect {
+  padding: 2rem 0 0 0;
+  background-color: rgb(204, 195, 181);
+  background: Linear-gradient(90deg, #e4d8c2 26.71%,#8a7b60 99.36%);
+  
+}
+.perfect-cards-container h1 {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.perfect-cards {
+  display: flex;
+  padding: 0 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perfect-card {
+  border-radius: 8px;
+  background-color: #626c7f;
+  box-shadow: 5px 5px 10px #252525;
+  margin: 1rem;
+  overflow: hidden;
+  width: 18rem;
+}
+
+.card-img-top {
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-left: 7rem;
+}
+
+.card-body {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 40px 25px;
+  height: auto;
+  max-width: 100%;
+  margin-top: 2rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.testimonials h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.testimonial-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+.testimonial-card {
+  margin-top: 4rem;
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.5;
+  box-sizing: border-box;
+  /* background: Linear-gradient(180deg, #cfcfc4 26.71%, #cfcfc4 99.36%); */
+  background-color: white;
+  max-width: 100%;
+  height: 100%;
+  max-height: 20rem;
+  z-index: 1;
+}
+
+.testimonial-card.middle {
+  transform: translateX(0) scale(1.2);
+  opacity: 1;
+  z-index: 3;
+}
+
+.testimonial-card.right {
+  transform: translateX(120%) scale(0.9);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.testimonial-card.left {
+  transform: translateX(-120%) scale(0.9);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.testimonial-card .card-img-top {
+  margin-right: 5rem;
+  width: 70px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* .card-img-top{
+   width: 100%; 
+} */
+
+.testimonial-card .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.testimonial-card .card-title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.testimonial-card .card-text {
+  font-size: 1rem;
+  color: black;
+}
+
+/* email part */
+.subscribe-section {
+  background-image: url("../assets/home/perfectTutor/emailpart.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px 20px 70px 20px;
+  border-radius: 0;
+  color: black; /* Adjust text color for contrast */
+  max-width: 100%; /* Full width */
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.subscribe-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.subscribe-heading {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.subscribe-paragraph {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.subscribe-input {
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 1em;
+}
+
+.subscribe-button {
+  padding: 12px 20px;
+  background-color: #00bfff;
+  border-radius: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #22ce83; /* Slightly darker shade on hover */
+}
+
+
+@media screen and (max-width:800px) {
+  .main-perfect{
+    margin: 0%;
+  }
+  .perfect-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .perfect-cards{
+    display: flex;
+    justify-content: center;
+  }
+  .testimonials{
+    width: 95vw;
+    margin: auto;
+  }
+}
